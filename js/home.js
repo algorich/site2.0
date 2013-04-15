@@ -43,13 +43,15 @@ var App = {
         var $newTeamMemberBox = $('#new-team-member-box');
 
         $newTeamMemberBox.on('click', function() {
+            var $newTeamMemberWrapper = $('#new-team-member-wrapper');
+
             var videoHtml = [
                 '<div id="video-capture-box">',
                 '<video autoplay style="width: 170px; height: 165px;"></video>',
                 '</div>'].join('');
 
             $newTeamMemberBox.html(videoHtml);
-
+            $newTeamMemberWrapper.attr('data-original-title', 'Clique para pausar ou continuar');
 
             if (navigator.getUserMedia) {
                 var $videoBox = $('#video-capture-box');

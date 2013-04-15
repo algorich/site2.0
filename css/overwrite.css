@@ -15,8 +15,11 @@ ul, ol { margin: 15px; }
 #new-team-member-box {
   width: 170px;
   height: 170px;
-  text-align: center;
   cursor: pointer;
+}
+
+#new-team-member-wrapper * {
+  text-align: center;
 }
 
 #team-take-picture {
