@@ -25,3 +25,25 @@ ul, ol { margin: 15px; }
 #team-take-picture {
   padding: 10px 0;
 }
+
+.social-bookmarks {
+  text-align: center;
+}
+
+.social-bookmarks > li {
+  float: none !important;
+  display: inline-block !important;
+}
+
+.testimonials {
+  min-height: 120px;
+}
+
+.title h1, .title h2, .title h3, .title h4, .title h5, .title h6 {
+  padding: 0 !important;
+  margin-left: 0 !important;
+}
+
+#info-social {
+  text-align: left !important;
+}
