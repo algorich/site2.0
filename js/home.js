@@ -26,7 +26,7 @@ var App = {
 
         //////////
         //
-        // Camera capture - http://migre.me/e7arf
+        // Begin: Camera capture - http://migre.me/e7arf
         //
 
         // cross browser support http://migre.me/e78Mi
@@ -39,30 +39,28 @@ var App = {
             window.mozURL ||
             window.msURL;
 
-
+        var $newTeamMemberWrapper = $('#new-team-member-wrapper');
         var $newTeamMemberBox = $('#new-team-member-box');
 
-        $newTeamMemberBox.on('click', function() {
-            var $newTeamMemberWrapper = $('#new-team-member-wrapper');
+        var getUserMediaerrorCallback = function(error) {
+            $newTeamMemberWrapper.attr('data-original-title', '');
+            $newTeamMemberBox.html('<img src="/img/time/tio-sam.jpg" />');
+            $newTeamMemberBox.attr('style', 'cursor: default');
+        };
 
-            var videoHtml = [
-                '<div id="video-capture-box">',
-                '<video autoplay style="width: 170px; height: 165px;"></video>',
-                '</div>'].join('');
+        if (navigator.getUserMedia) {
+            $newTeamMemberBox.on('click', function() {
+                var videoHtml = [
+                    '<div id="video-capture-box">',
+                    '<video autoplay style="width: 170px; height: 165px;"></video>',
+                    '</div>'].join('');
 
-            $newTeamMemberBox.html(videoHtml);
-            $newTeamMemberWrapper.attr('data-original-title', 'Clique para pausar ou continuar');
+                $newTeamMemberBox.html(videoHtml);
 
-            if (navigator.getUserMedia) {
-                var $videoBox = $('#video-capture-box');
                 var video = document.querySelector('video');
-                var $instructions = $('#video-instruction');
-
-                var errorCallback = function(error) {
-                    $newTeamMemberBox.html('<img src="/img/time/tio-sam.jpg" />');
-                };
 
                 var successCallback = function(stream) {
+                    $newTeamMemberWrapper.attr('data-original-title', 'Clique para pausar ou continuar');
                     // Set the source of the video element with the stream from the camera
                     if (video.mozSrcObject !== undefined) {
                         video.mozSrcObject = stream;
@@ -71,25 +69,21 @@ var App = {
                     }
                 };
 
-                navigator.getUserMedia({video: true}, successCallback, errorCallback);
-                $newTeamMemberBox.unbind();
+                navigator.getUserMedia({video: true}, successCallback, getUserMediaerrorCallback);
+                $newTeamMemberBox.unbind(); // remove the click event listener
 
                 $(video).on('click', function() {
-                    if(video.paused) {
-                        video.play();
-                    } else {
-                        video.pause();
-                    }
+                    video.paused ? video.play() : video.pause();
                 });
-            } else {
-                $newTeamMemberBox.html('<img src="/img/time/tio-sam.jpg" />');
-            }
-        });
-
-        // if (false) {
-        if (!navigator.getUserMedia) {
-            $newTeamMemberBox.html('<img src="/img/time/tio-sam.jpg" />');
+            });
+        } else {
+            getUserMediaerrorCallback();
         }
+
+        //
+        // End: Camera capture
+        //
+        //////////
 
     } // InterfaceActions
 
