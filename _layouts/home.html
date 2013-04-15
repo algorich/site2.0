@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='pt'>
+  {% include head.html %}
+  <link href="/css/home.css" rel="stylesheet">
+
+  <body>
+    <!--start: Header -->
+    <header>
+      <!--start: Container -->
+      <div class="container">
+        <!--start: Navbar -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </a>
+              <a class="brand" href="/"><i class="ico-charts circle"></i>Algo<span>rich</span>.</a>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li><a href="#servicos">Serviços</a></li>
+                  <li><a href="#clientes">Clientes</a></li>
+                  <li><a href="#time">Time</a></li>
+                  <li><a href='//blog.algorich.com.br'><span>Blog</span></a></li>
+                  <li><a href="/contato">Contato</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end: Navbar -->
+      </div>
+      <!--end: Container-->
+    </header>
+    <!--end: Header-->
+
+    {{ content }}
+
+    {% include footer.html %}
+    <script src="/js/jquery.localScroll.js"></script>
+    <script src="/js/jquery.scrollTo.js"></script>
+
+    <script src="/js/home.js"></script>
+  </body>
+</html>

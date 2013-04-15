@@ -1,0 +1,24 @@
+ul, ol { margin: 15px; }
+
+.title { margin-bottom: 20px; }
+
+.clients li { width: 144px }
+/* remover o 'blur' que fica na imagem quando tem o max-width: 100% do default */
+.clients li img { max-width: none; }
+
+.team-name {
+  padding: 15px 0 5px 0;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+#new-team-member-box {
+  width: 170px;
+  height: 170px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#team-take-picture {
+  padding: 10px 0;
+}
