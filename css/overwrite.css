@@ -47,3 +47,8 @@ ul, ol { margin: 15px; }
 #info-social {
   text-align: left !important;
 }
+
+/* Para a mudança de seção da home parar no lugar correto */
+#home-page .title {
+  margin-top: 90px;
+}
