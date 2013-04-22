@@ -50,7 +50,7 @@ p.app-highlight em {
 }
 
 .clients li img {
- -webkit-filter: saturate(0%);
+  -webkit-filter: saturate(0%);
 }
 
 .app-team-list {
@@ -59,6 +59,11 @@ p.app-highlight em {
 
 .app-team-list .span3 {
   text-align: center;
+}
+
+.app-team-list .span3 > img {
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .app-team-list #new-team-member-box {

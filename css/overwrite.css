@@ -69,7 +69,7 @@ ul, ol { margin: 15px; }
   box-shadow: 0px 0px 0px 3px #ccc;
 }
 
-.row, #footer-menu, #footer {
+.row, #footer-menu, #footer, #app-address {
   margin-left: 0 !important;
   padding: 0 40px;
 }
@@ -88,8 +88,18 @@ ul, ol { margin: 15px; }
 ** Main navigation
 */
 
-.navbar-fixed-top {
+.navbar .nav > li > a {
+  padding-top: 14px;
 
+  border-top: 10px solid #fff !important;
+}
+
+.navbar .nav > li > a:hover,
+.navbar .nav > li.active > a,
+.navbar .nav > li.active > a:hover {
+  color: #333 !important;
+  border-top: 10px solid #2ca02c !important;
+  background: #fff !important;
 }
 
 /* Para a mudança de seção da home parar no lugar correto */
@@ -168,4 +178,29 @@ ul, ol { margin: 15px; }
 
 #footer-menu-back-to-top a {
   background-color: #fff;
+}
+
+#footer-menu-links ul li a:hover {
+  text-decoration: underline;
+}
+
+#app-map {
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+#app-chapolin {
+  float: left;
+}
+
+.social-grid {
+  margin-top: 40px;
+}
+
+.social-info > div {
+  border-color: #2ca02c;
+}
+
+#footer-menu-back-to-top a:hover {
+  background: #fff url("../img/scroll-top-top.png") no-repeat center 5px;
 }
