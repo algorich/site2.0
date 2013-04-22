@@ -1,3 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+* {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
 ul, ol { margin: 15px; }
 
 .title { margin-bottom: 20px; }
@@ -42,13 +48,82 @@ ul, ol { margin: 15px; }
 .title h1, .title h2, .title h3, .title h4, .title h5, .title h6 {
   padding: 0 !important;
   margin-left: 0 !important;
+
+  border-bottom-color: #005be4 !important;
 }
 
 #info-social {
   text-align: left !important;
 }
 
+.title {
+  border: 0;
+}
+
+.circle-color-full {
+  background-color: #2ca02c;
+  box-shadow: 0px 0px 0px 3px #ccc;
+}
+
+.row {
+  margin-left: 0 !important;
+  padding: 0 40px;
+}
+
+.testimonials {
+  background: #fff;
+  border: 0;
+  box-shadow: none;
+}
+
+.testimonials-author {
+  font-size: 16px;
+}
+
+/*
+** Main navigation
+*/
+
+.navbar-fixed-top {
+
+}
+
 /* Para a mudança de seção da home parar no lugar correto */
 #home-page .title {
-  margin-top: 90px;
+  padding-top: 90px;
+}
+
+#home-page #app-banner {
+  background: #005be4;
+}
+
+#home-page .app-moto {
+  height: 500px;
+
+  background: url("../img/il_1.png") no-repeat right bottom;
+}
+
+#home-page .app-moto h1, #home-page .app-moto h2 {
+  margin-left: 20px;
+
+  color: #fff;
+  font-weight: 300 !important;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+#home-page .app-moto h1 {
+  padding-top: 200px;
+
+  font-size: 62px;
+  text-transform: uppercase;
+}
+
+#home-page .app-moto h2 {
+  margin-top: 10px;
+
+  font-size: 18px;
+}
+
+.social-bookmarks li a {
+  border: 0;
 }

@@ -4,3 +4,64 @@
     padding-bottom: 42px;
   }
 }
+
+.icons-box-vert-container .span4 .icons-box-vert {
+  height: 160px;
+
+  border: 0;
+}
+
+.icons-box-vert-container .span4 .icons-box-vert h3 {
+  margin-bottom: 10px;
+
+  color: #2ca02c;
+  font-size: 26px;
+  font-weight: 300 !important;
+}
+
+.icons-box-vert-container .span4 .icons-box-vert p {
+  font-size: 16px;
+}
+
+#app-clients {
+  background: #eee;
+}
+
+p.app-highlight {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+p.app-highlight em {
+  color: #2ca02c;
+  font-size: 22px;
+  font-style: normal;
+}
+
+.clients {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.clients li {
+  margin: 0 20px 40px 0;
+  width: auto;
+  display: inline-block;
+}
+
+.clients li img {
+ -webkit-filter: saturate(0%);
+}
+
+.app-team-list {
+  margin-top: 60px;
+}
+
+.app-team-list .span3 {
+  text-align: center;
+}
+
+.app-team-list #new-team-member-box {
+  width: 170px;
+  margin: 0 auto;
+}

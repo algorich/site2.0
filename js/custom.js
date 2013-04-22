@@ -12,3 +12,7 @@ $(function() {
     // ALGORICH: changed default behaviour from template.
     $('.tip').tooltip({ html: true });
 });
+
+$(function () {
+    $.stellar();
+});
