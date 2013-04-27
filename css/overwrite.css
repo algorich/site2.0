@@ -223,3 +223,16 @@ ul, ol { margin: 15px; }
 #app-services {
   background: url("../img/banner_dt3.png") no-repeat right -500px;
 }
+
+.navbar .brand {
+  margin-top: 0;
+  padding: 10px 0;
+}
+
+#footer-menu-logo a {
+  line-height: normal;
+}
+
+#footer-menu-logo img {
+  margin: 0;
+}
