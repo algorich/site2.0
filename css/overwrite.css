@@ -236,3 +236,7 @@ ul, ol { margin: 15px; }
 #footer-menu-logo img {
   margin: 0;
 }
+
+#page-title {
+	background: none;
+}
