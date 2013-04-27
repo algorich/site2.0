@@ -118,7 +118,7 @@ ul, ol { margin: 15px; }
 #home-page .app-moto {
   height: 500px;
 
-/*  background: url("../img/il_1.png") no-repeat right bottom;*/
+  background: url("../img/banner_dt2.png") no-repeat right top;
 }
 
 #home-page .app-moto h1, #home-page .app-moto h2 {
