@@ -118,7 +118,7 @@ ul, ol { margin: 15px; }
 #home-page .app-moto {
   height: 500px;
 
-  background: url("../img/il_1.png") no-repeat right bottom;
+/*  background: url("../img/il_1.png") no-repeat right bottom;*/
 }
 
 #home-page .app-moto h1, #home-page .app-moto h2 {
@@ -132,7 +132,7 @@ ul, ol { margin: 15px; }
 #home-page .app-moto h1 {
   padding-top: 200px;
 
-  font-size: 62px;
+  font-size: 42px;
   text-transform: uppercase;
 }
 
