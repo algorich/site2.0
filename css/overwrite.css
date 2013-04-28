@@ -146,6 +146,12 @@ ul, ol { margin: 15px; }
   border: 0;
 }
 
+#video-capture-box {
+  background: #C3C3C3 url('../img/loading.gif') no-repeat center center;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
 #footer-menu, #copyright {
   border-color: #2ca02c;
   background-color: #2ca02c;
