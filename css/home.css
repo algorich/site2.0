@@ -25,10 +25,11 @@
 
 #app-clients {
   background: #eee;
+  padding-bottom: 20px;
 }
 
-#app-clients .title {
-  padding-top: 20px;
+#app-clients .title.app-title-near {
+  padding-top: 10px;
 }
 
 p.app-highlight {
