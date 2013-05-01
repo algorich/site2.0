@@ -246,5 +246,53 @@ ul, ol { margin: 15px; }
 }
 
 #page-title {
-	background: none;
+  background: none;
+}
+
+
+/*
+** Responsive
+*/
+
+
+@media (max-width: 980px) {
+  #home-page .app-moto h1 {
+    padding-top: 80px;
+  }
+
+  #home-page .app-moto {
+    height: 350px;
+    background: none;
+  }
+
+  #app-services {
+    background: none;
+  }
+
+  .navbar .brand {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  #home-page .app-moto h1 {
+    padding-top: 80px;
+    font-size: 40px;
+  }
+
+  #home-page .app-moto h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+    #home-page .app-moto h1 {
+    padding-top: 80px;
+    font-size: 30px;
+  }
+
+  #home-page .app-moto h2 {
+    font-size: 15px;
+    max-width: 250px;
+  }
 }
