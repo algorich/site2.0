@@ -100,7 +100,8 @@ ul, ol { margin: 15px; }
 
 .navbar .nav > li > a:hover,
 .navbar .nav > li.active > a,
-.navbar .nav > li.active > a:hover {
+.navbar .nav > li.active > a:hover,
+.navbar .nav > li.active:focus > a {
   color: #333 !important;
   border-top: 10px solid #2ca02c !important;
   background: #fff !important;

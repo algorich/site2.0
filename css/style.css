@@ -177,12 +177,12 @@ header {
 	padding: 22px 15px \9;
 }
 
-.navbar .nav > li > a:focus,
-.navbar .nav > li > a:hover {
-	border-top:4px solid #29a9df !important;
-  	background: #29a9df !important;
-  	color: #fff;
-}
+/*.navbar .nav > li > a:focus,*/
+/*.navbar .nav > li > a:hover {*/
+/*	border-top:4px solid #29a9df !important;*/
+/*  	background: #29a9df !important;*/
+/*  	color: #fff;*/
+/*}*/
 
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:focus {
