@@ -40,9 +40,31 @@
     {{ content }}
 
     {% include footer.html %}
+
+    <!-- Modal: begin -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Nosso telefone está fora do ar</h3>
+      </div>
+      <div class="modal-body">
+        <p><strong>Estamos de mudança para nossa nova sede! =)</strong></p>
+        <p>Com isso, você não conseguirá falar conosco através do nosso telefone até a segunda-feira (21/10/2013). Pedimos que entre em contato através do e-mail <a href="mailto:contato@algorich.com.br">contato@algorich.com.br</a>.</p>
+      </div>
+    </div>
+    <!-- Modal: end -->
+
     <script src="/js/jquery.localScroll.js"></script>
     <script src="/js/jquery.scrollTo.js"></script>
 
     <script src="/js/home.js"></script>
+
+
+    <script>
+      $(function() {
+        $('#myModal').modal();
+      });
+    </script>
+
   </body>
 </html>
