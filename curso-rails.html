@@ -67,7 +67,7 @@ id: cursos
         <p>A carga horária total do curso será de 30 horas, sendo 25
         horas de RubyOnRails e 5 horas de HTML + CSS.</p>
 
-        <!-- Ementa: begin
+        <!-- Ementa: begin -->
 
         <div class="title"><h3>Ementa</h3></div>
 
@@ -80,17 +80,195 @@ id: cursos
 
         <div class="tabs-container">
           <div style="display: block;" class="tab-content" id="tab1">
+            <!-- start: Row -->
+            <div class="row-fluid">
 
-            <p>1. Ruby básico</p>
+              <div class="span4">
+                <p>1. Ruby básico</p>
+
+                <ul class="circle_list">
+                  <li>POO básico</li>
+                  <li>Variáveis, Strings e Comentários</li>
+                  <li>Variáveis e atribuições</li>
+                  <li>Tipagem</li>
+                  <li>String</li>
+                  <li>Tipos e operações básicas</li>
+                  <li>Estruturas de controle</li>
+                  <li>Expressões regulares</li>
+                  <li>Métodos comuns</li>
+                  <li>Definição de métodos</li>
+                  <li>Discussão: Enviando mensagens aos objetos</li>
+                  <li>Classes</li>
+                </ul>
+              </div>
+
+              <div class="span4">
+                <ul class="circle_list">
+                  <li>Classes abertas</li>
+                  <li>self</li>
+                  <li>Atributos e propriedades: acessores e modificadores</li>
+                  <li>Syntax Sugar: facilitando a sintaxe</li>
+                  <li>Coleções</li>
+                  <li>Hashes</li>
+                  <li>Blocos e Programação Funcional</li>
+                  <li>Manipulando erros e exceptions</li>
+                  <li>Métodos de Classe</li>
+                  <li>Polimorfismo</li>
+                  <li>Modulos</li>
+                  <li>Metaprogramação</li>
+                </ul>
+              </div>
+
+              <div class="span4">
+                <p>2. Ruby on Rails, visão geral</p>
+
+                <ul class="circle_list">
+                  <li>O que é Ruby on Rails</li>
+                  <li>Ambiente de Desenvolvimento</li>
+                  <li>Criando um novo projeto Rails</li>
+                  <li>Estrutura dos diretórios</li>
+                  <li>Banco de dados</li>
+                  <li>A base da construção: Scaffold</li>
+                  <li>Migrations</li>
+                  <li>Server</li>
+                  <li>Documentação do Rails</li>
+                  <li>Construindo uma pequena aplicação de exemplo com scaffold</li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- end: Row -->
+          </div>
+
+          <div style="display: none;" class="tab-content" id="tab2">
+            <!-- start: Row -->
+            <div class="row-fluid">
+
+              <div class="span4">
+                <p>3. Testando aplicações Rails</p>
+
+                <ul class="circle_list">
+                  <li>Ambiente de desenvolvimento: terminal, git, ...</li>
+                  <li>TDD básico</li>
+                  <li>Testes de aceitação e testes de unidade</li>
+                  <li>RSpec</li>
+                  <li>Capybara</li>
+                  <li>Testes de features com javascript</li>
+                  <li>O que testar?</li>
+                </ul>
+
+                <p>4. Active Record</p>
+
+                <ul class="circle_list">
+                  <li>Motivação</li>
+                  <li>Modelo - O "M" do MVC</li>
+                  <li>ActiveRecord</li>
+                </ul>
+              </div>
+
+              <div class="span4">
+                <ul class="circle_list">
+                  <li>Rake</li>
+                  <li>Criando Modelos</li>
+                  <li>Migrations</li>
+                  <li>Manipulando nossos modelos pelo console</li>
+                  <li>Finders</li>
+                  <li>Validações</li>
+                  <li>Pluralização com inflections</li>
+                  <li>Relacionamentos</li>
+                  <li>Auto-relacionamento</li>
+                  <li>Cache</li>
+                  <li>Eager Loading</li>
+                  <li>Named Scopes</li>
+                  <li>Modules</li>
+                </ul>
+              </div>
+
+              <div class="span4">
+                <p>5. Rotas</p>
+
+                <ul class="circle_list">
+                  <li>routes.rb</li>
+                  <li>Pretty URLs</li>
+                  <li>Named Routes</li>
+                  <li>REST - resources</li>
+                  <li>Actions extras em Resources</li>
+                  <li>Nested Resources</li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- end: Row -->
+          </div>
+
+          <div style="display: none;" class="tab-content" id="tab3">
+            <!-- start: Row -->
+            <div class="row-fluid">
+
+              <div class="span6">
+                <p>6. Controllers e Views</p>
+
+                <ul class="circle_list">
+                  <li>O "V" e o "C" do MVC</li>
+                  <li>Trabalhando com a View: O ERB</li>
+                  <li>Entendendo melhor o CRUD</li>
+                  <li>A action index-</li>
+                  <li>Helper</li>
+                  <li>A action destroy</li>
+                  <li>Redirecionamento de Action</li>
+                  <li>Exercícios: Deletando um restaurante</li>
+                  <li>Helpers para formulário</li>
+                  <li>Recebendo um parâmetro por um formulário</li>
+                  <li>A action create</li>
+                  <li>A action edit</li>
+                  <li>A action update</li>
+                </ul>
+              </div>
+
+              <div class="span6">
+                <ul class="circle_list">
+                  <li>Mostrando erros ao usuário</li>
+                  <li>Mensagens de erro na atualização</li>
+                  <li>Partial</li>
+                  <li>Respondendo em outros formatos como XML ou JSON</li>
+                  <li>Filtros</li>
+                  <li>Um pouco mais sobre o Scaffold</li>
+                  <li>Formulário com collection_select</li>
+                  <li>Mais sobre os controllers</li>
+                </ul>
+
+                <p>7. Ajax com Rails</p>
+
+                <p>8. Bundler</p>
+              </div>
+
+            </div>
+            <!-- end: Row -->
+          </div>
+
+          <div style="display: none;" class="tab-content" id="tab4">
+            <p>9. Asset pipeline</p>
 
             <ul class="circle_list">
-              <li>Variáveis, Strings e Comentários</li>
-              <li>Variáveis e atribuições</li>
+              <li>Uma convenção para gerenciar seus assets</li>
+              <li>Os diretórios /assets</li>
+              <li>Os assets em modo development e em modo production</li>
+            </ul>
+
+            <p>10. ActionMailer</p>
+
+            <ul class="circle_list">
+              <li>background task processing</li>
+            </ul>
+
+            <p>11. Principais gems</p>
+
+            <ul class="circle_list">
+              <li>simple_form</li>
+              <li>devise</li>
+              <li>pry</li>
             </ul>
           </div>
-          <div style="display: none;" class="tab-content" id="tab2">2. Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-          <div style="display: none;" class="tab-content" id="tab3">3. Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-          <div style="display: none;" class="tab-content" id="tab4">3. Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         </div>
 
         <!-- Ementa: end -->
@@ -110,7 +288,7 @@ id: cursos
 
         <div class="title"><h2>Inscreva-se!</h2></div>
 
-        <p><span class="label label-warning">SE LIGA!</span> <strong>Para aproveitar melhor o curso, recomendamos a leitura <a href="http://www.caelum.com.br/apostila-ruby-on-rails/" target="_blank">desta apostila da Caelum</a></strong></p>
+        <p><span class="label label-warning">SE LIGA!</span> <strong>Para aproveitar melhor o curso, recomendamos a leitura <a href="http://www.caelum.com.br/apostila-ruby-on-rails/" target="_blank">desta apostila da Caelum</a>.</strong></p>
 
         <br />
 
