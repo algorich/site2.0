@@ -254,6 +254,45 @@ ul, ol { margin: 15px; }
 }
 
 /*
+** Jobs
+*/
+
+#developers_and_designers {
+    margin: 0 0 0 -70px;
+    padding: 40px;
+    width: calc(100% - 1px);
+
+    background: #005be4 url("../img/job_bg.png") no-repeat center;
+}
+
+.job_description {
+    padding: 20px;
+    min-height: 220px;
+
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#developers_and_designers h3 {
+    margin-bottom: -5px;
+
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 3px #000;
+}
+
+#developers_and_designers h3 span {
+    display: inline-block;
+
+    border-bottom: 5px solid #2ca02c;
+}
+
+.job_form textarea {
+    height: 230px;
+}
+
+/*
 ** Responsive
 */
 
